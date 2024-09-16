@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Agro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+  <header style="height: 50px;"></header>
+  <div class="container-fluid p-4"
+    style="display: flex; flex-direction: column; align-items: center;align-content: center; text-align: center;">
+    <div class="m-3 p-4"
+      style="width: 600px; height: 600px;  border-radius: 15px; display: flex; align-items: center; align-content: center; flex-direction: column; background-color: var(--bg-white);color: var(--text-dark);">
+      <form class="p-4 m-4">
+        <h4 class="p-2">Faça Seu Login</h4>
+        <hr style="width: 500px; margin-top: 15px;">
+        <div class=" mb-3 p-2">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="EMAIL">
+        </div>
+        <div class="mb-3 p-2">
+          <input type="password" class="form-control" id="password" placeholder="SENHA">
+        </div>
+        <button type="submit" style="background-color: var(--bg-white);color: var(--text-dark); width: 240px;"
+          class="btn border mt-3" onclick="logIn(); return false">Entrar</button>
+        <hr style="width: 500px; margin-top: 40px;">
+        <div style="display: flex;">
+          <p class="p-2 me-4 m-3">Não Possui Conta? <br> Clique Aqui Para Criar Conta </p>
+          <p class="p-2 ms-4 m-3">Esqueci minha senha</p>
+        </div>
+        <button id="toggle" class="btn border m-4"
+          style="background-color: var(--bg-white);color: var(--text-dark);">Mudar
+          Tema</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    function logIn() {
+
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      if (email == "admin@gmail.com" && password == "admin") {
+        alert('Sucesso');
+        location.href = "index2.html";
+      } else {
+        alert('Usuário ou senha incorretos');
+      }
+
+    }
+  </script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

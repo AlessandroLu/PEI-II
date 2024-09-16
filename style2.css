@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Definição das cores */
+body {
+  /* cores de texto */
+  --text-white: #ffffff;
+  --text-dark: #142136;
+
+  /* cores de fundo */
+  --bg-white: #ffffff;
+  --bg-grey-light: #dcdcdc;
+  --bg-blue-dark: #314e7c;
+  --bg-Dark-Slate-Blue: #294e6a;
+
+  font-family: JetBrains mono;
+  line-height: 1.7;
+  background-color: var(--bg-grey-light);
+}
+.dark {
+  --text-white: #e6e6e6;
+  --text-dark: #ffffff;
+  --bg-grey-light: #010101;
+  --bg-white: #353845;
+  --bg-blue-dark: #142136;
+  --bg-indigo: #7577e1;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.button {
+  width: 200px;
+  padding: 5px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--bg-indigo);
+  color: var(--text-white);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
